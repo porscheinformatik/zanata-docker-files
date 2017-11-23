@@ -541,7 +541,7 @@
             <buffer-cache name="default" />
             <server name="default-server">
                 <http-listener name="default" redirect-socket="https"
-                    socket-binding="http" />
+                    socket-binding="http" proxy-address-forwarding="true" />
                 <host name="default-host" alias="localhost">
                     <location name="/" handler="welcome-content" />
                     <filter-ref name="server-header" />
