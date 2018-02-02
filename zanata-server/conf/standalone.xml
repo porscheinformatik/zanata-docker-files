@@ -545,18 +545,12 @@
                 <http-listener name="default" redirect-socket="https"
                     socket-binding="http" proxy-address-forwarding="true" />
                 <host name="default-host" alias="localhost">
-                    <location name="/" handler="welcome-content" />
-                    <filter-ref name="server-header" />
-                    <filter-ref name="x-powered-by-header" />
                 </host>
             </server>
             <servlet-container name="default">
                 <jsp-config />
                 <websockets />
             </servlet-container>
-            <handlers>
-                <file name="welcome-content" path="${jboss.home.dir}/welcome-content" />
-            </handlers>
             <filters>
                 <response-header name="server-header" header-value="WildFly/10"
                     header-name="Server" />
