@@ -44,7 +44,6 @@
         <!--<property name="zanata.security.adminusers" value=""/>-->
         <property name="zanata.email.defaultfromaddress" value="noreply@porscheinformatik.at" />
         <property name="zanata.file.directory" value="${env.ZANATA_HOME:/var/lib/zanata}/files" />
-        <property name="zanata.security.authpolicy.internal" value="zanata.internal" />
         <!-- <property name="zanata.security.authpolicy.saml2" value="zanata.saml2" /> -->
         <property name="zanata.support.oauth" value="false" />
     </system-properties>
